@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+  color: rgba(255, 255, 255, 0.88);
+  position: relative;
+  padding-bottom: 51px; /*height of the footer so the footer doesn't overlap*/
+  min-height: 100vh; /*to keep footer at the bottom if page content is < 100vh*/
+}
+h2,
+h3,
+h4 {
+  font-family: "Quicksand", sans-serif;
+}
+
+/*Navbar*/
+#navbar {
+  background-color: #130f0c;
+  padding: 0.6rem 1rem;
+  font-weight: lighter;
+  overflow: hidden;
+}
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  float: right;
+}
+#navbar li {
+  display: inline;
+}
+#navbar li a {
+  padding: 0.2rem 1rem;
+  text-decoration: none;
+  text-decoration: none;
+  font-size: 1.1em;
+  color: #fff;
+  text-align: center;
+}
+#navbar li a:hover {
+  font-weight: 400;
+}
+
+/*Content*/
+.main-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem 2rem;
+}
+.main-container section {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+}
+.page-header {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url("images/header-background.jpg");
+  background-blend-mode: multiply; /*blends the 2 backgrounds*/
+  background-size: cover; /*expend as wide/tall as it can to fill the space */
+}
+.page-header h1 {
+  font-family: "Merienda One", sans-serif;
+  font-size: 30px;
+}
+
+/*Footer*/
+.main-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1rem 0;
+  text-align: center;
+  font-size: small;
+}
+
+/*Index page*/
+.intro-header {
+  padding: 16rem 0;
+}
+.intro-header h1 {
+  font-family: "Merienda One", sans-serif;
+  font-size: 120px;
+}
+.intro-header span {
+  font-family: "Quicksand", sans-serif;
+  font-size: 50px;
+}
+
+/*Patterns page*/
+/* Slideshow container */
+.pattern-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Slide navigation */
+.pattern-nav {
+  width: 100%;
+  text-align: center;
+  /* overflow: hidden; */
+  margin-bottom: 1rem;
+}
+/* Navigation arrows */
+.prev {
+  float: left;
+}
+.next {
+  float: right;
+}
+.prev,
+.next {
+  width: 20%;
+  background-color: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+  font-weight: 900;
+  color: #fff;
+  font-size: 25px;
+}
+.prev:hover,
+.next:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+  cursor: pointer;
+  transform: scale(1.02);
+}
+/* Navigation slide title */
+#patternNavTitle {
+  width: 60%;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 1rem;
+  font-family: "Quicksand", sans-serif;
+}
+/* Pattern slide image*/
+.patternSlide img {
+  width: 100%;
+  padding-bottom: 2rem;
+}
+/* Pattern link*/
+.pattern-link a {
+  /* padding: 0.5rem; */
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.74);
+}
+/* Hide the pattern title */
+.slideTitle {
+  display: none;
+}
+
+/*Yarn page*/
+.yarn-img {
+  width: 350px;
+  float: right;
+}
+
+@media only screen and (max-width: 600px) {
+  .intro-header {
+    padding: 6rem 0;
+  }
+  .intro-header h1 {
+    font-family: "Merienda One", sans-serif;
+    font-size: 60px;
+  }
+  .intro-header span {
+    font-family: "Quicksand", sans-serif;
+    font-size: 30px;
+  }
+}
